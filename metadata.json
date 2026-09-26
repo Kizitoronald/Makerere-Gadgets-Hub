@@ -1,0 +1,6 @@
+{
+  "name": "Makerere Gadgets Hub",
+  "description": "Your Number One Tech Experts in Kampala, Uganda. Quality electronics, student deals, and free delivery to Makerere halls and hostels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
