@@ -18,7 +18,7 @@ export function formatPhoneForWhatsApp(phone: string): string {
     cleaned = '256' + cleaned;
   }
   
-  return cleaned || '2567405553369';
+  return cleaned || '256740553369';
 }
 
 /**

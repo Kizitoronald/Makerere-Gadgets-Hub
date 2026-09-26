@@ -350,16 +350,17 @@ export function getBusinessSettings(): BusinessSettings {
     const raw = localStorage.getItem(STORAGE_KEYS.SETTINGS);
     if (!raw) return INITIAL_BUSINESS_SETTINGS;
     const parsed = JSON.parse(raw);
-    // If settings still hold older placeholder number, update to Kizito Ronald's number
-    if (!parsed.whatsapp || parsed.whatsapp.includes('708 654') || parsed.whatsapp.includes('708654') || parsed.whatsapp.includes('40553369')) {
+    // If settings still hold older placeholder number or wrong digits, update to Kizito Ronald's exact number
+    const cleanedNumber = (parsed.whatsapp || '').replace(/\D/g, '');
+    if (!parsed.whatsapp || cleanedNumber !== '256740553369' && cleanedNumber !== '0740553369') {
       const synced = {
         ...parsed,
-        phone: '07405553369',
-        whatsapp: '07405553369',
+        phone: '+256 740 553369',
+        whatsapp: '+256 740 553369',
         email: parsed.email || 'kizitoronaldisgood@gmail.com',
         socialLinks: {
           ...parsed.socialLinks,
-          whatsapp: 'https://wa.me/2567405553369',
+          whatsapp: 'https://wa.me/256740553369',
         }
       };
       localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(synced));

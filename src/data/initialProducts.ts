@@ -345,8 +345,8 @@ export const INITIAL_PRODUCTS: Product[] = [
 export const INITIAL_BUSINESS_SETTINGS: BusinessSettings = {
   businessName: 'MAKERERE GADGETS HUB',
   motto: 'YOUR NUMBER ONE TECH EXPERTS',
-  phone: '07405553369',
-  whatsapp: '07405553369',
+  phone: '+256 740 553369',
+  whatsapp: '+256 740 553369',
   email: 'kizitoronaldisgood@gmail.com',
   location: 'Makerere Main Gate / Kikoni Stage, Kampala, Uganda',
   businessHours: 'Monday - Sunday: 7:30 AM – 10:30 PM (Express Campus Delivery)',
@@ -380,7 +380,7 @@ export const INITIAL_BUSINESS_SETTINGS: BusinessSettings = {
     'Wandegeya'
   ],
   socialLinks: {
-    whatsapp: 'https://wa.me/2567405553369',
+    whatsapp: 'https://wa.me/256740553369',
     tiktok: 'https://tiktok.com/@makereregadgetshub',
     instagram: 'https://instagram.com/makereregadgetshub',
     facebook: 'https://facebook.com/makereregadgetshub',
